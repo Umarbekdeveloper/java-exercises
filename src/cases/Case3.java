@@ -16,7 +16,7 @@ public class Case3 {
             case 3:
             case 4:
             case 5:
-                System.out.println("Bahaor");
+                System.out.println("Bahor");
                 break;
             case 6:
             case 7:

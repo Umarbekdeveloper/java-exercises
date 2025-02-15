@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Begin06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Tomoni: ");
+        System.out.print("Tomonlari: ");
         double a = sc.nextDouble();
         double b = sc.nextDouble();
         double c = sc.nextDouble();

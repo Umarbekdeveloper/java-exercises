@@ -2,7 +2,7 @@ package cases;
 
 import java.util.Scanner;
 
-public class Case3 {
+public class Case03 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter number 1<=k<=12: ");

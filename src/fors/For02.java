@@ -2,7 +2,7 @@ package fors;
 
 import java.util.Scanner;
 
-public class For3 {
+public class For02 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("a ni kiriting a>b: ");
@@ -10,7 +10,7 @@ public class For3 {
         System.out.print("b ni kiriting: ");
         int b = scanner.nextInt();
         int count = 0;
-        for (int i = b-1; i > a; i--) {
+        for (int i = a; i <= b; i++) {
             System.out.print(i+" ");
             count++;
         }

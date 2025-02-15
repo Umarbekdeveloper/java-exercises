@@ -2,7 +2,7 @@ package fors;
 
 import java.util.Scanner;
 
-public class For5 {
+public class For05 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Narx ni kiriting: ");

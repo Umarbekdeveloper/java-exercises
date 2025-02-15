@@ -2,14 +2,16 @@ package booleans;
 
 import java.util.Scanner;
 
-public class Boolean9 {
+public class Boolean06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Son a: ");
         int a = sc.nextInt();
         System.out.print("Son b: ");
         int b = sc.nextInt();
-        boolean shart = (a%2>0 || b%2>0);
-        System.out.println("a va b sonlarni hech bo'lmaganda bittasi toq sonlar: "+shart);
+        System.out.print("Son c: ");
+        int c = sc.nextInt();
+        boolean shart = (a<=b && b<=c);
+        System.out.println("Shart: "+shart);
     }
 }

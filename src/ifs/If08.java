@@ -2,7 +2,7 @@ package ifs;
 
 import java.util.Scanner;
 
-public class If6 {
+public class If08 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number: ");
@@ -10,9 +10,9 @@ public class If6 {
         System.out.print("Enter number: ");
         int b = scanner.nextInt();
         if (a>b){
-            System.out.println("Kattasi>>> "+a);
+            System.out.println("Kattasi>>> "+a+" va kichigi >>> "+b);
         }else {
-            System.out.println("Kattasi>>> "+b);
+            System.out.println("Kattasi>>> "+b+" va kichigi >>> "+a);
         }
     }
 }

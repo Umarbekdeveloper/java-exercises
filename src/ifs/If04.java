@@ -2,7 +2,7 @@ package ifs;
 
 import java.util.Scanner;
 
-public class If5 {
+public class If04 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number: ");
@@ -11,23 +11,16 @@ public class If5 {
         int b = scanner.nextInt();
         System.out.print("Enter number: ");
         int c = scanner.nextInt();
-        int countMusbat=0;
-        int countManfiy=0;
+        int count=0;
         if (a>0){
-            countMusbat++;
-        }else {
-            countManfiy++;
+            count++;
         }
         if (b>0) {
-            countMusbat++;
-        }else {
-            countManfiy++;
+            count++;
         }
         if (c>0){
-            countMusbat++;
-        }else {
-            countManfiy++;
+            count++;
         }
-        System.out.println(countMusbat+" ta musbat son bor va "+countManfiy+" ta manfiy son bor.");
+        System.out.println(count+" ta musbat son bor");
     }
 }

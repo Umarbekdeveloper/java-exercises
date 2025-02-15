@@ -2,20 +2,21 @@ package ifs;
 
 import java.util.Scanner;
 
-public class If7 {
+public class If09 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Enter number: ");
         int a = scanner.nextInt();
         System.out.print("Enter number: ");
         int b = scanner.nextInt();
-        int minNumber = Math.min(a,b);
-        if (minNumber>0 && minNumber<10){
-            System.out.println(minNumber+" ning tartib raqami >>> "+1);
+        int c = Math.min(a,b);
+        if (a>b){
+            System.out.println("Kattasi b = "+(b=a));
+            a=c;
+            System.out.println("Kichigi a = "+a);
+        }else{
+            System.out.println("Kattasi b = "+(b));
+            System.out.println("Kichigi a = "+a);
         }
-        if (minNumber>9 && minNumber<100){
-            System.out.println(minNumber+" ning tartib raqami >>> "+2);
-        }
-
     }
 }

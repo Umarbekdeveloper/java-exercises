@@ -1,8 +1,8 @@
-package integer;
+package integers;
 
 import java.util.Scanner;
 
-public class Integer11 {
+public class Integer13 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Son: ");
@@ -10,8 +10,7 @@ public class Integer11 {
         int yuzlik = son/100;
         int onlik = son/10%10;
         int birlik = son%10;
-        int result = yuzlik+onlik+birlik;
 
-        System.out.println("Raqamlari yig'indisi = "+result);
+        System.out.println("Yangi son = "+onlik+birlik+yuzlik);
     }
 }

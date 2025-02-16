@@ -13,12 +13,6 @@ public class FunSimple03 {
         System.out.println("A , B, C va D soni uchun:");
         MEAN(a,b,c,d);
 
-//        System.out.println("A va D soni uchun:");
-//        MEAN(a,c);
-//
-//        System.out.println("A va C soni uchun:");
-//        MEAN(a,d);
-
     }
 
     public static void MEAN(double num1,double num2, double num3, double num4) {

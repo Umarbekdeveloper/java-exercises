@@ -1,5 +1,6 @@
 package arrays;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class Array017 {
@@ -8,25 +9,25 @@ public class Array017 {
         System.out.print("n n>0:");
         int n = sc.nextInt();
         int arr[] = new int[n];
-        int[] massiv = new int[n];
         for (int i = 0; i < arr.length; i++) {
             arr[i] = (int) (Math.random() * 100);
         }
         System.out.println("Arrayni umumiy ko'rinishi: ");
-        for (int i = 0; i < arr.length; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        System.out.print(Arrays.toString(arr));
         System.out.println();
-        for (int i = 0; i < n / 4; i++) {
-            System.out.println("[ "+i+" ] = "+arr[i]+" ");
-            System.out.println("[ "+i+" ] = "+arr[i+1]+" ");
-            System.out.println("[ "+i+" ] = "+arr[n-1-i]+" ");
-            System.out.println("[ "+i+" ] = "+arr[n-1-i-1]+" ");
+        int i = 0, j = arr.length-1;
+        while (i<j){
+            System.out.print("[ "+i+" ] = "+arr[i++]+" ");
+            if (i>=j) break;
+            System.out.print("[ "+(i)+" ] = "+arr[i++]+" ");
+            System.out.print("[ "+(j)+" ] = "+arr[j--]+" ");
+            if (i>=j) break;
+            System.out.print("[ "+(j)+" ] = "+arr[j--]+" ");
         }
 
         // Agar massiv uzunligi toq bo'lsa, o'rtadagi elementni chiqarish
-        if (n % 2 != 0) {
-            System.out.println("[ "+n/2+" ] = "+arr[n/2]+" ");
+        if (i==j) {
+            System.out.print("[ "+i+" ] = "+arr[i]+" ");
         }
     }
 }
